@@ -1,10 +1,10 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
-function Loading() {
+export default function Loading() {
     return (
         <View style={styles.container}>
-            <Text>
+            <Text style={styles.text}>
                 Getting the fucking weather
             </Text>
         </View>
@@ -13,6 +13,14 @@ function Loading() {
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1
+        flex: 1,
+        justifyContent: 'flex-end',
+        paddingHorizontal: 30,
+        paddingVertical: 100,
+        backgroundColor: '#FDF6AA'
+    },
+    text: {
+        color: 'black',
+        fontSize: 30
     }
 })
